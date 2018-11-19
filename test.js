@@ -3,19 +3,19 @@ var bingo = require('./index');
 
 describe('bingo test', function() {
     it('init mechanisme to start', function() {
-        bingo.init();
+        bingo.reset();
         assert.equal(bingo.getExtracted().length, 0);
         assert.equal(bingo.getBag().length, 90);
     });
     it('init mechanisme after first extraction', function() {
-        bingo.init();
+        bingo.reset();
         bingo.extract();
         assert.equal(bingo.getExtracted().length, 1);
         assert.equal(bingo.getBag().length, 89);
     }); 
 
     it('init extract 90 times', function() {
-        bingo.init();
+        bingo.reset();
         for (var i=0; i<90; i++) {
             bingo.extract();
         }
@@ -23,7 +23,7 @@ describe('bingo test', function() {
         assert.equal(bingo.getBag().length, 0);
     }); 
     it('init extract 91 times', function() {
-        bingo.init();
+        bingo.reset();
         for (var i=0; i<91; i++) {
             bingo.extract();
         }

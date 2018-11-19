@@ -1,7 +1,7 @@
 var bag = [];
 var extracted = [];
 
-exports.init = function() {
+exports.reset = function() {
     bag = [];
     extracted = [];
     for(var i=1; i<=90; i++) {
@@ -27,3 +27,5 @@ exports.getExtracted = function() {
 exports.getBag = function() {
     return bag;
 }
+
+this.reset();
