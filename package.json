@@ -1,6 +1,6 @@
 {
   "name": "bingo-extract",
-  "version": "2.0.0",
+  "version": "2.0.1",
   "description": "\"A simple bingo extraction\"",
   "main": "index.js",
   "dependencies": {},
